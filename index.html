@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Diskusi Peserta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="login-section">
+            <h1>Login Peserta</h1>
+            <button id="google-login-button">Login dengan Google</button>
+        </div>
+
+        <div id="user-section" style="display:none;">
+            <p>Selamat datang, <span id="user-email"></span>!</p>
+            <button id="logout-button">Logout</button>
+            <h2>Jadwal Diskusi Anda:</h2>
+            <div id="user-jadwal-display">
+                <p>Memuat jadwal...</p>
+            </div>
+        </div>
+
+        <div id="config-section"> <!-- Bagian ini akan disembunyikan setelah login -->
+            <h1>Konfigurasi Firebase Saya</h1>
+            <p>Berikut adalah detail konfigurasi Firebase untuk aplikasi web Anda:</p>
+            <pre id="firebase-config-display"></pre>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>

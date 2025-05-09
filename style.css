@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f4;
+    color: #333;
+}
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px; /* Menambahkan lebar maksimal agar tidak terlalu lebar di layar besar */
+    margin-left: auto; /* Pusatkan container */
+    margin-right: auto; /* Pusatkan container */
+}
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #555;
+    margin-top: 30px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+pre {
+    background-color: #eee;
+    padding: 15px;
+    border-radius: 4px;
+    overflow-x: auto;
+    font-size: 0.9em;
+}
+
+/* Style untuk tombol login Google dan tombol logout */
+#google-login-button,
+#logout-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    display: block; /* Membuat tombol login mengambil lebar penuh */
+    width: 100%;    /* Membuat tombol login mengambil lebar penuh */
+    margin-top: 10px; /* Sedikit jarak di atas tombol login */
+    margin-bottom: 10px; /* Jarak bawah untuk tombol */
+}
+
+#google-login-button:hover,
+#logout-button:hover {
+    background-color: #0056b3;
+}
+
+#logout-button {
+    width: auto; /* Kembalikan lebar auto untuk tombol logout */
+    display: inline-block; /* Agar tidak mengambil lebar penuh */
+    margin-top: 0; /* Hapus margin atas jika tidak diperlukan */
+    margin-bottom: 15px; /* Jarak bawah untuk tombol logout */
+}
+
+/* Anda bisa menambahkan style spesifik untuk tombol Google jika mau, misal dengan logo Google */
+#google-login-button {
+    background-color: #db4437; /* Warna khas Google */
+}
+
+
+#user-section p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+#user-jadwal-display ul {
+    list-style-type: none;
+    padding: 0;
+}
+#user-jadwal-display li {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+#user-jadwal-display li strong {
+    color: #0056b3;
+}
