@@ -99,7 +99,7 @@ onAuthStateChanged(auth, async (user) => {
 async function tampilkanJadwalPengguna(uid) {
   if (!userJadwalDisplay) return;
   userJadwalDisplay.innerHTML = '<p>Memuat jadwal...</p>';
-  const namaKoleksi = "jadwal_diskusi";
+  const namaKoleksi = "schedules"; // Mengubah nama koleksi sesuai deskripsi Anda
   try {
     const q = query(collection(db, namaKoleksi), where("participants", "array-contains", uid));
     const querySnapshot = await getDocs(q);
